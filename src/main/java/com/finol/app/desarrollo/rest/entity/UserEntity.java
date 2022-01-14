@@ -41,7 +41,7 @@ public class UserEntity  implements Serializable {
 	@Column(name = "last_name", nullable = false,  length =50)
 	private String lastName;
 	
-	@Column(name = "email", nullable = false, length = 120)
+	@Column(name = "email", unique = true, nullable = false, length = 120)
 	private String email;
 	
 	@Column(name = "encrypted_password", nullable = false)
